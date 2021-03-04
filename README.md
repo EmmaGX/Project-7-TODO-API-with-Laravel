@@ -1,7 +1,7 @@
 # PHP Techdegree Project 7 - Todo API with Laravel
 
 <!-- step -->
-### Crate a Laravel app and connect it to a **MySQL** database using the .env file. 
+### Create a Laravel app and connect it to a **MySQL** database using the .env file. 
 
 <!-- step -->
 #### Create the Todo Model and Migration containing the id, name, status and timestamps.
