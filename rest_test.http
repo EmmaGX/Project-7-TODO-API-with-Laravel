@@ -9,16 +9,16 @@ POST http://localhost:8000/api/todos/
 Content-Type: application/json
 
 {
-    "name": "Steven Haas",
+    "name": "Watch Birds",
     "status": "Completed"
 }
 
 ### Firts Todo PUT request
-POST http://localhost:8000/api/todos/1?_method=PUT
+POST http://localhost:8000/api/todos/11?_method=PUT
 Content-Type: application/json
 
 {
-  "name": "Emma Gomez Xolo",
+  "name": "Drink Coffee",
   "status": "In Progress"
 }
 
