@@ -1,0 +1,14 @@
+### ALL TODOS
+GET http://localhost:8000/api/todos
+
+### SINGLE TODO
+GET http://localhost:8000/api/todos/4
+
+### First POST request
+POST http://localhost:8000/api/todos/
+Content-Type: application/json
+
+{
+    "name": "Steven Haas",
+    "status": "Completed"
+}
