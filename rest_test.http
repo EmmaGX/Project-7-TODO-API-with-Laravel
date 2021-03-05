@@ -12,3 +12,15 @@ Content-Type: application/json
     "name": "Steven Haas",
     "status": "Completed"
 }
+
+### Firts Todo PUT request
+POST http://localhost:8000/api/todos/1?_method=PUT
+Content-Type: application/json
+
+{
+  "name": "Emma Gomez Xolo",
+  "status": "In Progress"
+}
+
+### First DELETE request
+DELETE http://localhost:8000/api/todos/9

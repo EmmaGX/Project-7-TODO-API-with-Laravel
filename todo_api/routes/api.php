@@ -13,6 +13,11 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::get('todos', 'TodoController@index');
-Route::get('todos/{todo}', 'TodoController@show');
-Route::post('todos', 'TodoController@store');
+Route::apiResource('todos', 'TodoController');
+
+//Route::get('todos', 'TodoController@index');
+//Route::get('todos/{todo}', 'TodoController@show');
+//Route::put('todos/{todo}', 'TodoController@update');
+//Route::patch('todos/{todo}', 'TodoController@update');
+//Route::post('todos', 'TodoController@store');
+//Route::delete('todos/{todo}', 'TodoController@destroy');

@@ -31,6 +31,9 @@ class TodoController extends Controller
             'name' => 'required',
             'status' => 'required'
         ]);
+        if ($validate->fails()) {
+            return response($validate->errors(), 400);
+        }
         return response(new TodoResource(Todo::create($validate->validate())), 201);
     }
 
@@ -54,12 +57,15 @@ class TodoController extends Controller
      */
     public function update(Request $request, Todo $todo)
     {
-        $data = $request->validate([
+        $validate = Validator::make($request->toArray(),[
             'name' => 'required',
             'status' => 'required'
         ]);
-        $todo->update($data);
-        return response($todo->update($data), 200);
+        if ($validate->fails()) {
+            return response($validate->errors(), 400);
+        }
+        $todo->update($validate->validate());
+        return response(new TodoResource($todo), 201);
     }
 
     /**
